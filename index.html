@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena Breakout Feedback Infinito</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="./js/script.js" rel="preload" as="script">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="./images/background.jpg" alt="Imagem de Fundo" class="background">
+    <header>
+        <div class="topbar">
+            <div class="logo"><img src="./images/logo.png" alt="Logo do Arena Breakout"></div>
+            <div class="account">
+                <button class="account-button" id="account-button">
+                    <img src="./images/account.png" alt="Conta">
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div>
+                <h1>Bem-vindo ao Feedback Infinito do Arena Breakout</h1>
+                <p>Seu feedback é importante para nós. Por favor, faça login para fornecer suas opiniões.</p>
+            </div>
+        </div>
+        <div class="login-menu" id="login-menu">
+            <form>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="nickname">Apelido:</label>
+                <input type="text" id="nickname" name="nickname" required>
+                
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+        <div class="feedback-type">
+            <h2>Selecione o Tipo de Feedback</h2>
+            <form id="feedback-type-form">
+                <div class="feedback-options">
+                    <label>
+                        <input type="radio" name="feedback-type" value="Bug Report" required>
+                        Relatório de Bug
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback-type" value="Feature Request">
+                        Solicitação de Recurso
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback-type" value="Gameplay Feedback">
+                        Feedback de Jogabilidade
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback-type" value="Graphics Feedback">
+                        Feedback de Gráficos
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback-type" value="Audio Feedback">
+                        Feedback de Áudio
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback-type" value="Performance Issues">
+                        Problemas de Desempenho
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback-type" value="UI/UX Feedback">
+                        Feedback de UI/UX
+                    </label>
+                    <label>
+                        <input type="radio" name="feedback-type" value="Other">
+                        Outro
+                    </label>
+                </div>
+                <div class="feedback-inputs">
+                    <label for="feedback-title">Título do Feedback:</label>
+                    <input type="text" id="feedback-title" name="feedback-title" placeholder="Digite o título do seu feedback" required>
+
+                    <label for="feedback-content">Conteúdo do Feedback:</label>
+                    <textarea id="feedback-content" name="feedback-content" rows="5" placeholder="Descreva seu feedback em detalhes" required></textarea>
+
+                    <button type="submit">Enviar Feedback</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
